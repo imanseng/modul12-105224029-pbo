@@ -1,8 +1,8 @@
 class SistemKRSManager {
-    private MySQLDatabaseConnection db; // Ketergantungan langsung (Hardcoded)
+    private DatabaseConnection db;
 
-    public SistemKRSManager() {
-        this.db = new MySQLDatabaseConnection(); // menginstansiasi secara langsung objek MySQLDatabaseConnection
+    public SistemKRSManager(DatabaseConnection db) {
+        this.db = db;
     }
 
     public double kalkulasiUKT(KalkulasiJalurUKT jalurMasuk) {
