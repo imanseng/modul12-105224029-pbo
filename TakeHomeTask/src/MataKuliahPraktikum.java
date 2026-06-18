@@ -1,4 +1,4 @@
-class MataKuliahPraktikum implements OperasiMataKuliah {
+class MataKuliahPraktikum implements OperasiMataKuliah, OperasiPraktikum {
     private String nama;
     public MataKuliahPraktikum(String nama) { this.nama = nama; }
 
